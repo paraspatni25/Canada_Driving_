@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Canada Driving Quiz</string>
     <string name="splash_screen_logo">splash_screen_logo</string>
+    <string name="state_name">State Name</string>
+    <string name="zero">0</string>
+    <string name="options">Options</string>
 </resources>

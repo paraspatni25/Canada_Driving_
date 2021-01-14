@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36701356488",
+    "project_id": "canada-driving-quiz",
+    "storage_bucket": "canada-driving-quiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36701356488:android:cb08f8d4ee48b62359c0fd",
+        "android_client_info": {
+          "package_name": "com.example.canadadrivingquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36701356488-edr15jue5486339tsm0hs8gh2rd8s0ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV9cEF-uavYUO-_UZyhqcL_Af0fk67xXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36701356488-edr15jue5486339tsm0hs8gh2rd8s0ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
