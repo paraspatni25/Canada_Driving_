@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,139 +8,28 @@
     android:orientation="horizontal"
     tools:context=".Quiz_questions">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/question_card_view"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questions_recycler_view"
+        android:background="@color/Background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:background="@color/Background"
-        android:layout_marginRight="10dp"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="5dp">
+        android:layout_above="@+id/submit_quiz"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="15dp"
-            android:gravity="center">
+    </androidx.recyclerview.widget.RecyclerView>
 
-            <RelativeLayout
-                android:id="@+id/question_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/question_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/question"
-                    android:textColor="@color/Text_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/current_question_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:layout_toStartOf="@id/slash"
-                    android:text="@string/zero"
-                    android:textColor="@color/Text_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/slash"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:layout_toStartOf="@id/total_question"
-                    android:text="@string/slash"
-                    android:textColor="@color/Text_color"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/total_question"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="5dp"
-                    android:text="@string/zero"
-                    android:textColor="@color/Text_color"
-                    android:textSize="18sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/question_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question_label"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/quiz_question"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/question_here"
-                    android:textColor="@color/Text_color"
-                    android:textSize="25sp" />
-
-                <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/quiz_question"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp">
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/options"
-                        android:textColor="@color/Text_color"
-                        android:textSize="21sp" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:text="@string/options"
-                        android:textColor="@color/Text_color"
-                        android:textSize="21sp" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:text="@string/options"
-                        android:textColor="@color/Text_color"
-                        android:textSize="21sp" />
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:text="@string/options"
-                        android:textColor="@color/Text_color"
-                        android:textSize="21sp" />
-
-                </RadioGroup>
+    <Button
+        android:id="@+id/submit_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="Submit" />
 
 
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
+</RelativeLayout>
 
