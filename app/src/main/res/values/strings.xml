@@ -4,4 +4,9 @@
     <string name="state_name">State Name</string>
     <string name="zero">0</string>
     <string name="options">Options</string>
+    <string name="question">Question</string>
+    <string name="question_here">Question Here</string>
+    <string name="province">Province</string>
+    <string name="total_question">Total Question</string>
+    <string name="slash">/</string>
 </resources>

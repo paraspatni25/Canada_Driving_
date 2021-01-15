@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_prompt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/user_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Enter your name"
+        android:textColor="@color/Text_color"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/user_name_editable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/Text_color"
+        android:textColorHighlight="@color/Text_color">
+
+        <requestFocus />
+
+    </EditText>
+
+
+</LinearLayout>

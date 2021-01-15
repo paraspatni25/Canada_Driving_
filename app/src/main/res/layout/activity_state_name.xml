@@ -12,28 +12,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:id="@+id/province_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp">
+            android:layout_marginRight="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Province"
-                android:textColor="@color/Grey" />
+                android:text="@string/province"
+                android:textColor="@color/Text_color"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:text="Total Question"
-                android:textColor="@color/Grey" />
+                android:text="@string/total_question"
+                android:textColor="@color/Text_color"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap" />
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
@@ -41,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="25dp"
             app:cardElevation="5dp">
@@ -63,7 +67,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_gravity="center_vertical"
                     android:text="@string/state_name"
-                    android:textColor="@color/Grey"
+                    android:textColor="@color/Text_color"
                     android:textSize="21sp" />
 
                 <TextView
@@ -72,8 +76,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="@string/zero"
-                    android:textColor="@color/Grey"
-                    android:textSize="21sp" />
+                    android:textColor="@color/Text_color"
+                    android:textSize="21sp"
+                    tools:ignore="RelativeOverlap" />
 
             </RelativeLayout>
 
