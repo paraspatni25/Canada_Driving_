@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_margin="10dp"
             android:background="@color/Background"
-            android:paddingBottom="10dp">
+            android:paddingBottom="1dp">
 
         </androidx.recyclerview.widget.RecyclerView>
 

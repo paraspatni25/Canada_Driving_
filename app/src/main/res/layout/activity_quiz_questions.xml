@@ -12,7 +12,7 @@
         android:id="@+id/questions_recycler_view"
         android:background="@color/Background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/submit_quiz"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
@@ -25,13 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="75dp"
         android:layout_marginBottom="20dp"
+        android:textColor="@color/Background"
         android:background="@drawable/round_button"
         android:text="@string/submit" />
 
-
 </RelativeLayout>
-
