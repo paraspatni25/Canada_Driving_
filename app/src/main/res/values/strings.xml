@@ -9,4 +9,5 @@
     <string name="province">Province</string>
     <string name="total_question">Total Question</string>
     <string name="slash">/</string>
+    <string name="submit">Submit</string>
 </resources>
